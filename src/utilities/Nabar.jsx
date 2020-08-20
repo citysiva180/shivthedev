@@ -4,7 +4,7 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark purple">
       <Link className="navbar-brand" to="/">
         <i className="fas fa-laptop-code"></i>
         ShivTheDev.Tech
@@ -58,6 +58,12 @@ const Navbar = () => {
           rel="noopener noreferrer"
           target="_blank"
         ></a>
+        {/* <a
+          href="https://www.instagram.com/_shivthedev_/"
+          className="fab fa-instagram-square"
+          rel="noopener noreferrer"
+          target="_blank"
+        ></a> */}
         <a
           className="fab fa-facebook-square"
           href="https://www.facebook.com/sivjackson007"

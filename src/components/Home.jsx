@@ -10,6 +10,7 @@ class Home extends Component {
   render() {
     return (
       <div className="home">
+        {/* Carousel */}
         <div
           id="carouselExampleFade"
           class="carousel slide carousel-fade"
@@ -35,7 +36,7 @@ class Home extends Component {
             <div class="carousel-item">
               <div class="carousel-caption d-md-block">
                 <p>Tech Evangelist</p>
-                <h5>Blogger / Quoran</h5>
+                <h5>Blogger / Mediam</h5>
               </div>
               <img src={shiv1} class="d-none d-block w-100" alt="..." />
             </div>
@@ -66,14 +67,28 @@ class Home extends Component {
             <span class="sr-only">Next</span>
           </a>
         </div>
+
         <div className="container">
-          <h1>Fullstack Developer / Designer</h1>
-          <h1>Programming Languages known</h1>
-          <h1>Certfications</h1>
-          <h1>Work Experience</h1>
-          <h1>Education</h1>
-          <h1>Aspirational Note</h1>
-          <p>Article starts here </p>
+          <div className="RoleData">
+            <h1>Fullstack Developer / Designer</h1>
+          </div>
+          <div className="ProgrammingLanguage">
+            <h1>Programming Languages known</h1>
+          </div>
+          <div className="Certifications">
+            <h1>Certfications</h1>
+          </div>
+          <div className="Experience">
+            <h1>Work Experience</h1>
+          </div>
+          <div className="Education">
+            <h1>Education</h1>
+          </div>
+          <div className="Qoutes">
+            <h1>Aspirational Note</h1>
+          </div>
+
+          {/* footer starts here */}
         </div>
       </div>
     );

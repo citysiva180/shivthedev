@@ -2,7 +2,7 @@
     font-family: 'Squada One', cursive;
     font-size: 30px;
     color: white;
-    text-shadow: 2px 2px 4px #000000;
+    text-shadow: 2px 2px 4px black;
 
 }
 
@@ -24,4 +24,30 @@
     margin-right: 20px;
     color: white;
     text-shadow: 2px 2px 4px #000000;
+}
+
+.navbar {
+    /* background-color: #47113f; */
+    background-color: purple;
+
+}
+
+
+.nav-link:hover {
+    color: white
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+h1 {
+    margin-top: 100px;
 }
