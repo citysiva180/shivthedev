@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../stylesheets/home.css";
+import Introduction from "../components/intro";
 
 import shiv from "../assets/shivthedev.png";
 import shiv1 from "../assets/shivthedev1.png";
@@ -70,7 +71,7 @@ class Home extends Component {
 
         <div className="container">
           <div className="RoleData">
-            <h1>Fullstack Developer / Designer</h1>
+            <Introduction></Introduction>
           </div>
           <div className="ProgrammingLanguage">
             <h1>Programming Languages known</h1>
