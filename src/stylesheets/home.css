@@ -4,7 +4,7 @@
 
 .carousel-inner {
   object-position: 100% 0;
-  height: 840px
+  height: 100%;
 }
 
 /*--- Bootstrap Mobile Gutter Fix --*/
@@ -21,6 +21,6 @@ h1 {
 .carousel-caption {
   font-family: 'Squada One', cursive;
   color: white;
-  font-size: 220px;
-  margin-bottom: 200px;
+  font-size: 15rem;
+  margin-bottom: 50px;
 }

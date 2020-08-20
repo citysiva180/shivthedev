@@ -3,6 +3,8 @@ import "../stylesheets/home.css";
 import nyc from "../assets/NYC.jpg";
 import laptop from "../assets/developer.jpg";
 import shiv from "../assets/shivthedev.png";
+import shiv1 from "../assets/shivthedev1.png";
+import shiv2 from "../assets/shivthedev3.png";
 
 class Home extends Component {
   state = {};
@@ -27,23 +29,23 @@ class Home extends Component {
             <div class="carousel-item active">
               <div class="carousel-caption d-md-block">
                 <p>FullStack Developer</p>
-                <h5>First slide label</h5>
+                <h5>MERN AND PYTHON</h5>
               </div>
-              <img src={shiv} class="d-block w-100" alt="..." />
+              <img src={shiv} class="d-none d-block w-100" alt="..." />
             </div>
             <div class="carousel-item">
               <div class="carousel-caption d-md-block">
-                <p>FullStack Developer</p>
+                <p>Tech Evangelist</p>
                 <h5>First slide label</h5>
               </div>
-              <img src={nyc} class="d-block w-100" alt="..." />
+              <img src={shiv1} class="d-none d-block w-100" alt="..." />
             </div>
             <div class="carousel-item">
               <div class="carousel-caption d-md-block">
-                <p>FullStack Developer</p>
+                <p>App Designer</p>
                 <h5>First slide label</h5>
               </div>
-              <img src={laptop} class="d-block w-100" alt="..." />
+              <img src={shiv2} class="d-none d-block w-100" alt="..." />
             </div>
           </div>
           <a
