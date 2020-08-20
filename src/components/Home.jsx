@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "../stylesheets/home.css";
 import nyc from "../assets/NYC.jpg";
-import logo from "../assets/developer.jpg";
+import laptop from "../assets/developer.jpg";
 import shiv from "../assets/shivthedev.JPG";
 
 class Home extends Component {
@@ -16,13 +16,13 @@ class Home extends Component {
         >
           <div class="carousel-inner">
             <div class="carousel-item active">
+              <img src={shiv} class="d-block w-100" alt="..." />
+            </div>
+            <div class="carousel-item">
               <img src={nyc} class="d-block w-100" alt="..." />
             </div>
             <div class="carousel-item">
-              <img src={logo} class="d-block w-100" alt="..." />
-            </div>
-            <div class="carousel-item">
-              <img src={shiv} class="d-block w-100" alt="..." />
+              <img src={laptop} class="d-block w-100" alt="..." />
             </div>
           </div>
           <a
@@ -43,6 +43,15 @@ class Home extends Component {
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
+        </div>
+        <div className="container">
+          <h1>Fullstack Developer / Designer</h1>
+          <h1>Programming Languages known</h1>
+          <h1>Certfications</h1>
+          <h1>Work Experience</h1>
+          <h1>Education</h1>
+          <h1>Aspirational Note</h1>
+          <p>Article starts here </p>
         </div>
       </div>
     );

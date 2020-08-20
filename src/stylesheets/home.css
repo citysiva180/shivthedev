@@ -2,8 +2,8 @@
   margin: auto;
 }
 
-.card {
-  background-size: cover;
+.carousel-inner {
+  height: 540px
 }
 
 /*--- Bootstrap Mobile Gutter Fix --*/
