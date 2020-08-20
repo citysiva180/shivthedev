@@ -5,6 +5,7 @@ import portfolio from "./components/portfolio";
 import contact from "./components/contactMe";
 import article from "./components/article";
 import Navbar from "./utilities/Nabar";
+import Footer from "./utilities/footer";
 import "./App.css";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/article" component={article}></Route>
           <Redirect path="/home" exact component={Home}></Redirect>
         </Switch>
+        <Footer></Footer>
       </BrowserRouter>
     </React.Fragment>
   );

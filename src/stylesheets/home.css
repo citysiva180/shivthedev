@@ -16,6 +16,8 @@
 
 h1 {
   font-family: 'Squada One', cursive;
+  /* text-shadow: 2px 2px 4px hotpink; */
+  color: purple;
 }
 
 .carousel-caption {
