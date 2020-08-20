@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "../stylesheets/home.css";
 import Introduction from "../components/intro";
+import Programming from "../components/programming";
 
 import shiv from "../assets/shivthedev.png";
 import shiv1 from "../assets/shivthedev1.png";
@@ -74,7 +75,7 @@ class Home extends Component {
             <Introduction></Introduction>
           </div>
           <div className="ProgrammingLanguage">
-            <h1>Programming Languages known</h1>
+            <Programming></Programming>
           </div>
           <div className="Certifications">
             <h1>Certfications</h1>
