@@ -1,32 +1,45 @@
 import React from "react";
-import python from "../assets/logos/python.png";
+import python from "../assets/logos/python.jpg";
 import reactjs from "../assets/logos/reactjs.png";
-import aws from "../assets/logos/amazonWebServices.jpg";
+import aws from "../assets/logos/aws.png";
 import nodejs from "../assets/logos/nodejs.jpg";
-import dotnet from "../assets/logos/dotnet.jpg";
+import dotnet from "../assets/logos/dotnet.png";
+import javascript from "../assets/logos/javaScript.png";
+import bootstrap from "../assets/logos/bootstrap.png";
 import "../stylesheets/programming.css";
 
 const Programming = () => {
   const cardInfo = [
     {
       image: python,
-      title: "python",
-      text: "Worked with Djang, PIP commands and Pandas",
+      title: "Python",
+      text: "Worked with Django MVT and Pandas",
     },
-    { image: nodejs, title: "Node JS", text: "DS and Algo, and ECMA 2018" },
+    { image: nodejs, title: "Node JS", text: "Worked with Timeout Module" },
+    {
+      image: javascript,
+      title: "Javascript",
+      text: "ECMA 2018 and Arrow Functions",
+    },
     {
       image: reactjs,
       title: "ReactJs",
-      text: "Props,State,Hooks and Functional Components",
+      text: "Worked with Redux and ReactNative",
     },
-    { image: aws, title: "AWS", text: "EC2,Workspaces and Amplify" },
-    { image: dotnet, title: "C#", text: ".NET Core, WPF and MSSQL" },
+    { image: aws, title: "AWS", text: "EC2, Workspaces and Amplify" },
+    { image: dotnet, title: "C#", text: "Worked with WPF and MSSQL" },
+
+    {
+      image: bootstrap,
+      title: "Bootstrap",
+      text: "Flex, Grid System and Breakpoints",
+    },
   ];
 
   const renderCard = (card, index) => {
     return (
       <div className="card" key={card.index}>
-        <img src={card.image} className="card-img-top" alt="..." />
+        <img src={card.image} className="card-img-top " alt="..." />
         <div className="card-body">
           <h5 className="card-title">{card.title}</h5>
           <p className="card-text">{card.text}</p>
@@ -36,7 +49,7 @@ const Programming = () => {
   };
 
   return (
-    <div className="container">
+    <div className="deck">
       <h1>Programming Skills</h1>
       {cardInfo.map(renderCard)}
     </div>
