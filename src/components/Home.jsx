@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "../stylesheets/home.css";
 import nyc from "../assets/NYC.jpg";
 import laptop from "../assets/developer.jpg";
-import shiv from "../assets/shivthedev.JPG";
+import shiv from "../assets/shivthedev.png";
 
 class Home extends Component {
   state = {};
@@ -14,14 +14,35 @@ class Home extends Component {
           class="carousel slide carousel-fade"
           data-ride="carousel"
         >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleCaptions"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
+              <div class="carousel-caption d-md-block">
+                <p>FullStack Developer</p>
+                <h5>First slide label</h5>
+              </div>
               <img src={shiv} class="d-block w-100" alt="..." />
             </div>
             <div class="carousel-item">
+              <div class="carousel-caption d-md-block">
+                <p>FullStack Developer</p>
+                <h5>First slide label</h5>
+              </div>
               <img src={nyc} class="d-block w-100" alt="..." />
             </div>
             <div class="carousel-item">
+              <div class="carousel-caption d-md-block">
+                <p>FullStack Developer</p>
+                <h5>First slide label</h5>
+              </div>
               <img src={laptop} class="d-block w-100" alt="..." />
             </div>
           </div>

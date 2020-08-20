@@ -3,7 +3,8 @@
 }
 
 .carousel-inner {
-  height: 540px
+  object-position: 100% 0;
+  height: 840px
 }
 
 /*--- Bootstrap Mobile Gutter Fix --*/
@@ -11,4 +12,15 @@
 .container-fluid {
   margin-left: 0px !important;
   margin-right: 0px !important;
+}
+
+h1 {
+  font-family: 'Squada One', cursive;
+}
+
+.carousel-caption {
+  font-family: 'Squada One', cursive;
+  color: white;
+  font-size: 220px;
+  margin-bottom: 200px;
 }
