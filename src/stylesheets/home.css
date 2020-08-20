@@ -1,29 +1,14 @@
 .home {
-    margin: auto;
+  margin: auto;
 }
 
 .card {
-    background-size: cover;
+  background-size: cover;
 }
 
-.jumbotron {
-    background-image: url("../assets/siva.jpg");
-    background-size: cover;
-    height: 540px;
-
+/*--- Bootstrap Mobile Gutter Fix --*/
+.row,
+.container-fluid {
+  margin-left: 0px !important;
+  margin-right: 0px !important;
 }
-
-.jumbotron>h1 {
-    color: white;
-    font-family: 'Oswald', sans-serif;
-}
-
-.jumbotron>p {
-    /* font-family: 'Oswald', sans-serif;*/
-    /* font-family: 'Roboto Slab', serif; */
-    /* font-family: 'Bree Serif', serif; */
-    /* font-family: 'Merriweather', serif; */
-    color: white;
-}
-
-.jumbotron.card.btn {}
