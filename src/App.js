@@ -12,15 +12,14 @@ function App() {
     <React.Fragment>
       <BrowserRouter>
         <Navbar></Navbar>
+
         <Switch>
-          <div className="container-fluid">
-            <Route path="/" exact component={Home}></Route>
-            <Route path="/portfolio" exact component={portfolio}></Route>
-            <Route path="/contact" exact component={contact}></Route>
-            <Route path="/article" exact component={article}></Route>
-            <Redirect path="/" exact to="/"></Redirect>
-            <Redirect path="/home" exact component={Home}></Redirect>
-          </div>
+          <Route path="/" exact component={Home}></Route>
+          <Redirect path="/" exact to="/"></Redirect>
+          <Route path="/portfolio" component={portfolio}></Route>
+          <Route path="/contact" component={contact}></Route>
+          <Route path="/article" component={article}></Route>
+          <Redirect path="/home" exact component={Home}></Redirect>
         </Switch>
       </BrowserRouter>
     </React.Fragment>
