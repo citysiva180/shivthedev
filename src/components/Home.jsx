@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "../stylesheets/home.css";
-import nyc from "../assets/NYC.jpg";
-import laptop from "../assets/developer.jpg";
+
 import shiv from "../assets/shivthedev.png";
 import shiv1 from "../assets/shivthedev1.png";
 import shiv2 from "../assets/shivthedev3.png";
@@ -36,14 +35,14 @@ class Home extends Component {
             <div class="carousel-item">
               <div class="carousel-caption d-md-block">
                 <p>Tech Evangelist</p>
-                <h5>First slide label</h5>
+                <h5>Blogger / Quoran</h5>
               </div>
               <img src={shiv1} class="d-none d-block w-100" alt="..." />
             </div>
             <div class="carousel-item">
               <div class="carousel-caption d-md-block">
                 <p>App Designer</p>
-                <h5>First slide label</h5>
+                <h5>ReactNative and Sketch</h5>
               </div>
               <img src={shiv2} class="d-none d-block w-100" alt="..." />
             </div>
