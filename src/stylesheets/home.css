@@ -8,11 +8,11 @@
 }
 
 /*--- Bootstrap Mobile Gutter Fix --*/
-.row,
+/* .row,
 .container-fluid {
   margin-left: 0px !important;
   margin-right: 0px !important;
-}
+} */
 
 h1 {
   font-family: 'Squada One', cursive;
@@ -82,5 +82,9 @@ h1 {
 
 .RoleData {
   /* background-image: linear-gradient(to right, aquamarine, white); */
+  background-color: purple;
+}
+
+.Certifications {
   background-color: purple;
 }

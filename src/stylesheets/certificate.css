@@ -7,19 +7,32 @@
 
 .certificate>.container {
     margin-top: 10px;
+    /* margin-left: 10px; */
     box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
 }
 
-.certificate>.container>.card>.card-img-overlay>.fas {
+.certificate>.container>.card>.card-img-overlay>i {
     text-align: center;
-    height: 30px;
-    width: 30px
+
+
 }
+
+.certificate>.container>.card>.card-img-overlay>.card-text {
+    text-align: center;
+
+
+}
+
 
 .certificate>.container>.card>.card-img-overlay>.card-title {
     text-align: center;
 }
 
+.certificate>.container>h1 {
+
+    /* border-radius: 25%; */
+    border: 2px solid purple;
+}
 
 /* 
 .certificate>.card>.card-img {
