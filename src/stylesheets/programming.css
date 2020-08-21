@@ -11,6 +11,7 @@
     border: 2px solid purple;
     box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
 
+
     /* margin-top: 25px; */
     /* color: white; */
 }
@@ -73,9 +74,19 @@
 }
 
 .container {
+    /* background-color: white; */
     background-color: white;
+
+
+
     padding: 20px;
-    margin-bottom: 5px;
+
+    /* margin-bottom: 5px; */
+    /* border: 5px solid purple; */
     box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
     /* border: 0px 5px 0px 5px solid purple */
+}
+
+.container>h1 {
+    border: 2px solid purple
 }

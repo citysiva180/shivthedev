@@ -6,6 +6,8 @@ import nodejs from "../assets/logos/nodejs.jpg";
 import dotnet from "../assets/logos/dotnet.png";
 import javascript from "../assets/logos/javaScript.png";
 import bootstrap from "../assets/logos/bootstrap.png";
+import sql from "../assets/logos/MySQL.png";
+// import java from "../assets/logos/java_final.png";
 import "../stylesheets/programming.css";
 
 const Programming = () => {
@@ -33,6 +35,16 @@ const Programming = () => {
       image: bootstrap,
       title: "Bootstrap",
       text: "Flex, Grid System and Breakpoints",
+    },
+    // {
+    //   image: java,
+    //   title: "Java",
+    //   text: "Core Java, EJB, Struts and DS",
+    // },
+    {
+      image: sql,
+      title: "My SQL",
+      text: "Relational DBs and Concurrencies",
     },
   ];
 
