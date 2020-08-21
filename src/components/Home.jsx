@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "../stylesheets/home.css";
 import Introduction from "../components/intro";
 import Programming from "../components/programming";
+import Certificates from "../components/certifications";
 // import heart from "../assets/logos/heart-regular.svg";
 
 import shiv from "../assets/shivthedev.png";
@@ -78,7 +79,7 @@ class Home extends Component {
           <Programming></Programming>
         </div>
         <div className="Certifications">
-          <h1>Certfications</h1>
+          <Certificates></Certificates>
         </div>
         <div className="Experience">
           <h1>Work Experience</h1>
