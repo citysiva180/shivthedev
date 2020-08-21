@@ -1,4 +1,28 @@
-.certificate.card {
-    width: 100%;
+.certificate>.container>.card {
     border-radius: 25%;
+    /* width: inherit;
+    height: auto; */
+
 }
+
+.certificate>.container {
+    margin-top: 10px;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+.certificate>.container>.card>.card-img-overlay>.fas {
+    text-align: center;
+    height: 30px;
+    width: 30px
+}
+
+.certificate>.container>.card>.card-img-overlay>.card-title {
+    text-align: center;
+}
+
+
+/* 
+.certificate>.card>.card-img {
+
+    height: 450px;
+} */
