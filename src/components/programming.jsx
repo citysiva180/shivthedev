@@ -27,7 +27,7 @@ const Programming = () => {
       text: "Worked with Redux and ReactNative",
     },
     { image: aws, title: "AWS", text: "EC2, Workspaces and Amplify" },
-    { image: dotnet, title: "C#", text: "Worked with WPF and MSSQL" },
+    { image: dotnet, title: ".NET CORE", text: "Worked with WPF and MSSQL" },
 
     {
       image: bootstrap,
@@ -49,8 +49,8 @@ const Programming = () => {
   };
 
   return (
-    <div className="deck">
-      <h1>Programming Skills</h1>
+    <div className="container">
+      <h1>Skills that I adore</h1>
       {cardInfo.map(renderCard)}
     </div>
   );

@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import "../stylesheets/home.css";
 import Introduction from "../components/intro";
 import Programming from "../components/programming";
+// import heart from "../assets/logos/heart-regular.svg";
 
 import shiv from "../assets/shivthedev.png";
 import shiv1 from "../assets/shivthedev1.png";
@@ -70,28 +71,26 @@ class Home extends Component {
           </a>
         </div>
 
-        <div className="container">
-          <div className="RoleData">
-            <Introduction></Introduction>
-          </div>
-          <div className="ProgrammingLanguage">
-            <Programming></Programming>
-          </div>
-          <div className="Certifications">
-            <h1>Certfications</h1>
-          </div>
-          <div className="Experience">
-            <h1>Work Experience</h1>
-          </div>
-          <div className="Education">
-            <h1>Education</h1>
-          </div>
-          <div className="Qoutes">
-            <h1>Aspirational Note</h1>
-          </div>
-
-          {/* footer starts here */}
+        <div className="RoleData">
+          <Introduction></Introduction>
         </div>
+        <div className="ProgrammingLanguage">
+          <Programming></Programming>
+        </div>
+        <div className="Certifications">
+          <h1>Certfications</h1>
+        </div>
+        <div className="Experience">
+          <h1>Work Experience</h1>
+        </div>
+        <div className="Education">
+          <h1>Education</h1>
+        </div>
+        <div className="Qoutes">
+          <h1>Aspirational Note</h1>
+        </div>
+
+        {/* footer starts here */}
       </div>
     );
   }

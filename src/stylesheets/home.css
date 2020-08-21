@@ -69,3 +69,17 @@ h1 {
   }
 
 }
+
+
+.ProgrammingLanguage {
+  background-image: url("../assets/logos/heart-regular-purple.svg");
+  background-repeat: repeat;
+  background-size: 65px 65px;
+  background-color: white;
+  /* transform: rotate(30deg); */
+  /* padding: 50px */
+}
+
+.RoleData {
+  box-shadow: none;
+}
