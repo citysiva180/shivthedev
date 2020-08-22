@@ -91,7 +91,7 @@ class Home extends Component {
         <div className="Education">
           <Education></Education>
         </div>
-        <div className="Qoutes">
+        <div className="Tweets">
           <Tweets></Tweets>
         </div>
 

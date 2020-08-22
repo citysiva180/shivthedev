@@ -102,3 +102,10 @@ h1 {
 .Education {
   background-color: purple;
 }
+
+.Tweets {
+  background-image: url("../assets/logos/twitter-square-brands.svg");
+  background-repeat: repeat;
+  background-size: 65px 65px;
+  background-color: white;
+}
