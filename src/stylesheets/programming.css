@@ -73,18 +73,14 @@
     transform: scale3d(1, 1, 1);
 }
 
+/* Important Piece of Code */
+
 .container {
-    /* background-color: white; */
+
     background-color: white;
-
-
-
     padding: 20px;
-
-    /* margin-bottom: 5px; */
-    /* border: 5px solid purple; */
     box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
-    /* border: 0px 5px 0px 5px solid purple */
+
 }
 
 .container>h1 {
