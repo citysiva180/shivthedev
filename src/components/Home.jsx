@@ -21,58 +21,64 @@ class Home extends Component {
         {/* Carousel */}
         <div
           id="carouselExampleFade"
-          class="carousel slide carousel-fade"
+          className="carousel slide carousel-fade"
           data-ride="carousel"
         >
-          <ol class="carousel-indicators">
+          <ol className="carousel-indicators">
             <li
               data-target="#carouselExampleCaptions"
               data-slide-to="0"
-              class="active"
+              className="active"
             ></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
             <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
           </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="carousel-caption d-md-block">
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <div className="carousel-caption d-md-block">
                 <p>FullStack Developer</p>
                 <h5>MERN AND PYTHON</h5>
               </div>
-              <img src={shiv} class="d-none d-block w-100" alt="..." />
+              <img src={shiv} className="d-none d-block w-100" alt="..." />
             </div>
-            <div class="carousel-item">
-              <div class="carousel-caption d-md-block">
+            <div className="carousel-item">
+              <div className="carousel-caption d-md-block">
                 <p>Tech Evangelist</p>
                 <h5>Blogger / Mediam</h5>
               </div>
-              <img src={shiv1} class="d-none d-block w-100" alt="..." />
+              <img src={shiv1} className="d-none d-block w-100" alt="..." />
             </div>
-            <div class="carousel-item">
-              <div class="carousel-caption d-md-block">
+            <div className="carousel-item">
+              <div className="carousel-caption d-md-block">
                 <p>App Designer</p>
                 <h5>ReactNative and Sketch</h5>
               </div>
-              <img src={shiv2} class="d-none d-block w-100" alt="..." />
+              <img src={shiv2} className="d-none d-block w-100" alt="..." />
             </div>
           </div>
           <a
-            class="carousel-control-prev"
+            className="carousel-control-prev"
             href="#carouselExampleFade"
             role="button"
             data-slide="prev"
           >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
+            <span
+              className="carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="sr-only">Previous</span>
           </a>
           <a
-            class="carousel-control-next"
+            className="carousel-control-next"
             href="#carouselExampleFade"
             role="button"
             data-slide="next"
           >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
+            <span
+              className="carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="sr-only">Next</span>
           </a>
         </div>
 

@@ -30,13 +30,13 @@ const Certificates = () => {
 
   const renderCert = (card, index) => {
     return (
-      <div class="card bg-white text-dark" key={card.index}>
-        {/* <img src={nyc} class="card-img" alt="..." /> */}
-        <div class="card-img-overlay">
-          <h5 class="card-title">{card.title}</h5>
-          <i class="fas fa-award w-100"></i>
-          <p class="card-text">{card.text}</p>
-          <p class="card-text">
+      <div className="card bg-white text-dark" key={index}>
+        {/* <img src={nyc} className="card-img" alt="..." /> */}
+        <div className="card-img-overlay">
+          <h5 className="card-title">{card.title}</h5>
+          <i className="fas fa-award w-100"></i>
+          <p className="card-text">{card.text}</p>
+          <p className="card-text">
             <b>{card.updated}</b>
           </p>
         </div>

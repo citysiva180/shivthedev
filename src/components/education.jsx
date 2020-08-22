@@ -6,7 +6,7 @@ const education = () => {
       <div className="container">
         <h1>Education</h1>
         <div className="tabular">
-          <table class="table">
+          <table className="table">
             <thead className="tableHead">
               <tr>
                 <th scope="col">#</th>

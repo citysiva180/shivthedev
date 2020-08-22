@@ -50,7 +50,7 @@ const Programming = () => {
 
   const renderCard = (card, index) => {
     return (
-      <div className="card" key={card.index}>
+      <div className="card" key={index}>
         <img src={card.image} className="card-img-top " alt="..." />
         <div className="card-body">
           <h5 className="card-title">{card.title}</h5>

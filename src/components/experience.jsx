@@ -12,7 +12,7 @@ const Experience = () => {
             style={{
               color: "black",
               width: "100%",
-              "background-color": "white",
+              backgroundColor: "white",
               height: "inherit",
               transform: "none",
             }}
@@ -27,10 +27,10 @@ const Experience = () => {
                   aria-expanded="true"
                   aria-controls="collapseOne"
                   style={{
-                    "text-decoration": "none",
+                    textDecoration: "none",
                     fontFamily: "Oswald, sans-serif",
                     color: "purple",
-                    "font-size": "20px",
+                    fontSize: "20px",
                   }}
                 >
                   Systems Engineer - Cognizant Tech Solutions, Period - Feb 2017
@@ -82,7 +82,7 @@ const Experience = () => {
             style={{
               color: "black",
               width: "100%",
-              "background-color": "white",
+              backgroundColor: "white",
               height: "inherit",
               transform: "none",
             }}
@@ -97,10 +97,10 @@ const Experience = () => {
                   aria-expanded="true"
                   aria-controls="collapseTwo"
                   style={{
-                    "text-decoration": "none",
+                    textDecoration: "none",
                     fontFamily: "Oswald, sans-serif",
                     color: "purple",
-                    "font-size": "20px",
+                    fontSize: "20px",
                   }}
                 >
                   Senior Systems Engineer - Cognizant Tech Solutions, Period -
@@ -153,7 +153,7 @@ const Experience = () => {
             style={{
               color: "black",
               width: "100%",
-              "background-color": "white",
+              backgroundColor: "white",
               height: "inherit",
               transform: "none",
             }}
@@ -168,10 +168,10 @@ const Experience = () => {
                   aria-expanded="true"
                   aria-controls="collapseThree"
                   style={{
-                    "text-decoration": "none",
+                    textDecoration: "none",
                     fontFamily: "Oswald, sans-serif",
                     color: "purple",
-                    "font-size": "20px",
+                    fontSize: "20px",
                   }}
                 >
                   Quality Assurance Engineer - Cognizant Tech Solutions , Period
