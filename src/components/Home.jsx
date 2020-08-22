@@ -5,6 +5,7 @@ import Programming from "../components/programming";
 import Certificates from "../components/certifications";
 import Experience from "../components/experience";
 import Education from "../components/education";
+import Tweets from "../components/recentTweets";
 // import heart from "../assets/logos/heart-regular.svg";
 
 import shiv from "../assets/shivthedev.png";
@@ -91,7 +92,7 @@ class Home extends Component {
           <Education></Education>
         </div>
         <div className="Qoutes">
-          <h1>Aspirational Note</h1>
+          <Tweets></Tweets>
         </div>
 
         {/* footer starts here */}

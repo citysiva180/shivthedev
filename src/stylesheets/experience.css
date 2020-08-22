@@ -1,6 +1,7 @@
 .experience>.container {
     background-color: purple;
     color: White;
+    /* margin-bottom: 10px; */
 }
 
 .experience>.container>h1 {

@@ -174,7 +174,7 @@ const Experience = () => {
                     "font-size": "20px",
                   }}
                 >
-                  Quality Assruance Engineer - Cognizant Tech Solutions , Period
+                  Quality Assurance Engineer - Cognizant Tech Solutions , Period
                   - June 2019 to Present
                 </button>
               </h2>
