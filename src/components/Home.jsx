@@ -4,11 +4,13 @@ import Introduction from "../components/intro";
 import Programming from "../components/programming";
 import Certificates from "../components/certifications";
 import Experience from "../components/experience";
+import Education from "../components/education";
 // import heart from "../assets/logos/heart-regular.svg";
 
 import shiv from "../assets/shivthedev.png";
 import shiv1 from "../assets/shivthedev1.png";
 import shiv2 from "../assets/shivthedev3.png";
+import education from "../components/education";
 
 class Home extends Component {
   state = {};
@@ -86,7 +88,7 @@ class Home extends Component {
           <Experience></Experience>
         </div>
         <div className="Education">
-          <h1>Education</h1>
+          <Education></Education>
         </div>
         <div className="Qoutes">
           <h1>Aspirational Note</h1>

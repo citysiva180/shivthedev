@@ -57,8 +57,8 @@ const Experience = () => {
                 <ul>
                   <li>
                     {" "}
-                    Got trained in Customer Service Supporting, Tone of Voice
-                    and Probing
+                    Got trained in Customer Tech Support, Tone of Voice and
+                    Probing
                   </li>
                   <li>
                     Trained in Basic Cloud Computing concepts such as
