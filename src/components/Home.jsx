@@ -6,12 +6,9 @@ import Certificates from "../components/certifications";
 import Experience from "../components/experience";
 import Education from "../components/education";
 import Tweets from "../components/recentTweets";
-// import heart from "../assets/logos/heart-regular.svg";
-
 import shiv from "../assets/shivthedev.png";
 import shiv1 from "../assets/shivthedev1.png";
 import shiv2 from "../assets/shivthedev3.png";
-import education from "../components/education";
 
 class Home extends Component {
   state = {};

@@ -32,7 +32,7 @@ const education = () => {
                 <th scope="row">3</th>
                 <td>Middle School</td>
                 <td>Mahatma Montessori School- MDU</td>
-                <td>@82.5%</td>
+                <td>82.5%</td>
               </tr>
             </tbody>
           </table>

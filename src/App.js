@@ -20,7 +20,7 @@ function App() {
           <Route path="/portfolio" component={portfolio}></Route>
           <Route path="/contact" component={contact}></Route>
           <Route path="/article" component={article}></Route>
-          <Redirect path="/home" exact component={Home}></Redirect>
+          <Redirect path="/home" exact to="/" component={Home}></Redirect>
         </Switch>
         <Footer></Footer>
       </BrowserRouter>
