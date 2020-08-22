@@ -1,0 +1,18 @@
+.experience>.container {
+    background-color: purple;
+    color: White;
+}
+
+.experience>.container>h1 {
+    color: white;
+    border: 2px solid white;
+}
+
+.experience>.container>.accordian>.card>.card-header {
+    background-color: yellow !important;
+
+}
+
+.experience>.container>.accordian>.card:hover {
+    transform: none;
+}

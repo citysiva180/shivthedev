@@ -80,9 +80,29 @@
     background-color: white;
     padding: 20px;
     box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.3);
-
+    /* font-family: 'Ubuntu Condensed', sans-serif; */
+    /* font-family: 'Ubuntu', sans-serif; */
+    /* font-family: 'Cairo', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    color: rgb(46, 46, 46);
+    /* font-family: 'Nunito', sans-serif; */
+    font-size: 18px
 }
 
 .container>h1 {
     border: 2px solid purple
+}
+
+.program>.container {
+    background-color: purple;
+    color: white;
+}
+
+.program>.container>.card>.card-body>.card-title {
+    color: white;
+}
+
+.program>.container>h1 {
+    color: white;
+    border: 2px solid white;
 }

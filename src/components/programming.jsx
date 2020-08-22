@@ -61,9 +61,11 @@ const Programming = () => {
   };
 
   return (
-    <div className="container">
-      <h1>Skills that I adore</h1>
-      {cardInfo.map(renderCard)}
+    <div className="program">
+      <div className="container">
+        <h1>Skills that I adore</h1>
+        {cardInfo.map(renderCard)}
+      </div>
     </div>
   );
 };
