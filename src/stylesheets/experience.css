@@ -1,0 +1,4 @@
+.active-accordion,
+.accordion-head:hover {
+    background-color: purple;
+}
