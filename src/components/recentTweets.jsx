@@ -3,7 +3,7 @@ import { Tweet } from "react-twitter-widgets";
 import "../stylesheets/recentTweets.css";
 
 const Tweets = () => {
-  const tweetIds = [
+  let tweetIds = [
     "1281819161040023553",
     "1289205851404660736",
     "1108565412747186176",
@@ -18,30 +18,52 @@ const Tweets = () => {
     "1266806025488748544",
   ];
 
-  let someTweet1 = tweetIds[Math.floor(Math.random() * tweetIds.length)];
-  let someTweet2 = tweetIds[Math.floor(Math.random() * tweetIds.length)];
-  let someTweet3 = tweetIds[Math.floor(Math.random() * tweetIds.length)];
-  let someTweet4 = tweetIds[Math.floor(Math.random() * tweetIds.length)];
-  // let someTweet5 = tweetIds[Math.floor(Math.random() * tweetIds.length)];
-  // let someTweet6 = tweetIds[Math.floor(Math.random() * tweetIds.length)];
+  function randomIntFromInterval(min, max) {
+    // min and max included
+    return Math.floor(Math.random() * (max - min + 1) + min);
+  }
+
+  let value1 = Number(randomIntFromInterval(0, 2));
+  let value2 = Number(randomIntFromInterval(3, 5));
+  let value3 = Number(randomIntFromInterval(6, 8));
+  let value4 = Number(randomIntFromInterval(9, 11));
+
+  let someTweet1 = tweetIds[value1];
+  let someTweet2 = tweetIds[value2];
+  let someTweet3 = tweetIds[value3];
+  let someTweet4 = tweetIds[value4];
+
+  function handleClick() {
+    console.log("The link was clicked");
+  }
 
   return (
-    <div className="container">
-      <h1>Tweets</h1>
-      <p>Reload to see different tweets</p>
-      <div className="twee">
-        <div className="tweets">
-          <Tweet tweetId={someTweet1} options={{ width: "200" }} />
+    <div className="Twitter">
+      <div className="container">
+        <h1>Tweets</h1>
+
+        <p>
+          This component, randomly reloads selected tweets. For this you would
+          need to get the twitter IDs and push them to a random function.{" "}
+        </p>
+        <div className="twee">
+          <div className="tweets">
+            <Tweet tweetId={someTweet1} options={{ width: "200" }} />
+          </div>
+          <div className="tweets">
+            <Tweet tweetId={someTweet2} options={{ width: "200" }} />
+          </div>
+          <div className="tweets">
+            <Tweet tweetId={someTweet3} options={{ width: "200" }} />
+          </div>
+          <div className="tweets">
+            <Tweet tweetId={someTweet4} options={{ width: "200" }} />
+          </div>
         </div>
-        <div className="tweets">
-          <Tweet tweetId={someTweet2} options={{ width: "200" }} />
-        </div>
-        <div className="tweets">
-          <Tweet tweetId={someTweet3} options={{ width: "200" }} />
-        </div>
-        <div className="tweets">
-          <Tweet tweetId={someTweet4} options={{ width: "200" }} />
-        </div>
+
+        <button className="btn btn-large purple" onClick={handleClick}>
+          Click here to randomly load some selected tweets
+        </button>
       </div>
     </div>
   );
