@@ -13,6 +13,9 @@ class Tweets extends Component {
     ],
   };
 
+  componentDidUpdate(previousProps, prevState, snapshot) {
+    console.log(this.componentDidUpdate);
+  }
   reloadTweets = (e) => {
     e.preventDefault();
     let x = randomTweetGenerator();
@@ -26,7 +29,7 @@ class Tweets extends Component {
   render() {
     const renderTweet = (item, key) => {
       return (
-        <div className="tweets">
+        <div className="tweets" key={key}>
           {<Tweet tweetId={item.tweet} options={{ width: 200 }} />}
         </div>
       );
