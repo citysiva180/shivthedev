@@ -1,34 +1,29 @@
 import React, { Component } from "react";
 import { Tweet } from "react-twitter-widgets";
 import "../stylesheets/recentTweets.css";
-import {
-  someTweet5,
-  someTweet6,
-  someTweet7,
-  someTweet8,
-} from "../components/rough";
+// import {
+//   someTweet5,
+//   someTweet6,
+//   someTweet7,
+//   someTweet8,
+// } from "../components/rough";
 
 class Tweets extends Component {
   state = {
-    someTweet1: "",
-    someTweet2: "",
-    someTweet3: "",
-    someTweet4: "",
+    tweets: [
+      "1124514496477687810",
+      "1128937546866544641",
+      "1134044618541027329",
+      "1140593481682833408",
+      "1183456431279788033",
+      "1266806025488748544",
+    ],
   };
 
-  // refreshPage = () => {
-  //   this.setState(
-  //     { someTweet1: someTweet5 },
-  //     { someTweet2: someTweet6 },
-  //     { someTweet3: someTweet7 },
-  //     { someTweet4: someTweet8 }
-  //   );
-  // };
+  refreshPage = () => {
+    this.setState((state) => {});
+  };
   render() {
-    // let someTweet1 = "";
-    // let someTweet2 = "";
-    // let someTweet3 = "";
-    // let someTweet4 = "";
     return (
       <div className="Twitter">
         <div className="container">
@@ -38,23 +33,16 @@ class Tweets extends Component {
             This component, randomly reloads selected tweets. For this you would
             need to get the twitter IDs and push them to a random function.{" "}
           </p>
-          <div className="twee">
-            <div className="tweets">
-              <Tweet tweetId={someTweet5} options={{ width: "200" }} />
-            </div>
-            <div className="tweets">
-              <Tweet tweetId={someTweet6} options={{ width: "200" }} />
-            </div>
-            <div className="tweets">
-              <Tweet tweetId={someTweet7} options={{ width: "200" }} />
-            </div>
-            <div className="tweets">
-              <Tweet tweetId={someTweet8} options={{ width: "200" }} />
-            </div>
-          </div>
-          {/* <button className="btn btn-large purple" onClick={this.refreshPage}>
+          {this.state.tweets.map((item) => (
+            <ul id="menu">
+              <li key={item}>
+                {<Tweet tweetId={item} options={{ width: 200 }} />}
+              </li>
+            </ul>
+          ))}
+          <button className="btn btn-large purple" onClick={this.refreshPage}>
             Click here to randomly load some selected tweets
-          </button> */}
+          </button>
         </div>
       </div>
     );

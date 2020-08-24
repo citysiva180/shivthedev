@@ -22,6 +22,14 @@
     width: 200px;
 }
 
+.Tweet {
+    display: inline;
+}
+
+ul#menu li {
+    display: inline;
+}
+
 
 /* 
 blockquote.twitter-tweet {

@@ -18,6 +18,8 @@ function randomIntFromInterval(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
+let values = [];
+
 let value1 = Number(randomIntFromInterval(0, 2));
 let value2 = Number(randomIntFromInterval(3, 5));
 let value3 = Number(randomIntFromInterval(6, 8));
