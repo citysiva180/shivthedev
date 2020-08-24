@@ -21,9 +21,11 @@ function randomIntFromInterval(min, max) {
 let value1 = Number(randomIntFromInterval(0, 2));
 let value2 = Number(randomIntFromInterval(3, 5));
 let value3 = Number(randomIntFromInterval(6, 8));
-let value4 = Number(randomIntFromInterval(9, 12));
+let value4 = Number(randomIntFromInterval(9, 11));
 
-someTweet1 = tweetIds[value1];
-someTweet2 = tweetIds[value2];
-someTweet3 = tweetIds[value3];
-someTweet4 = tweetIds[value4];
+let someTweet5 = tweetIds[value1];
+let someTweet6 = tweetIds[value2];
+let someTweet7 = tweetIds[value3];
+let someTweet8 = tweetIds[value4];
+
+export { someTweet5, someTweet6, someTweet7, someTweet8 };

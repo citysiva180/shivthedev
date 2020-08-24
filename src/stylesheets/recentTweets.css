@@ -1,5 +1,5 @@
-.twee {
-    display: inline;
+.Twitter>.container {
+    align-content: center;
 }
 
 .Twitter>.container>.btn {
@@ -12,6 +12,7 @@
     color: white
 }
 
+
 .tweets {
     display: inline-block;
     color: purple;
@@ -20,6 +21,7 @@
     /* height: 600px; */
     width: 200px;
 }
+
 
 /* 
 blockquote.twitter-tweet {

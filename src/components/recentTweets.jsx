@@ -1,72 +1,64 @@
-import React from "react";
+import React, { Component } from "react";
 import { Tweet } from "react-twitter-widgets";
 import "../stylesheets/recentTweets.css";
+import {
+  someTweet5,
+  someTweet6,
+  someTweet7,
+  someTweet8,
+} from "../components/rough";
 
-const Tweets = () => {
-  let tweetIds = [
-    "1281819161040023553",
-    "1289205851404660736",
-    "1108565412747186176",
-    "1118032374246322176",
-    "1118193735786008578",
-    "1119148595117035520",
-    "1124514496477687810",
-    "1128937546866544641",
-    "1134044618541027329",
-    "1140593481682833408",
-    "1183456431279788033",
-    "1266806025488748544",
-  ];
+class Tweets extends Component {
+  state = {
+    someTweet1: "",
+    someTweet2: "",
+    someTweet3: "",
+    someTweet4: "",
+  };
 
-  function randomIntFromInterval(min, max) {
-    // min and max included
-    return Math.floor(Math.random() * (max - min + 1) + min);
-  }
+  // refreshPage = () => {
+  //   this.setState(
+  //     { someTweet1: someTweet5 },
+  //     { someTweet2: someTweet6 },
+  //     { someTweet3: someTweet7 },
+  //     { someTweet4: someTweet8 }
+  //   );
+  // };
+  render() {
+    // let someTweet1 = "";
+    // let someTweet2 = "";
+    // let someTweet3 = "";
+    // let someTweet4 = "";
+    return (
+      <div className="Twitter">
+        <div className="container">
+          <h1>Tweets</h1>
 
-  let value1 = Number(randomIntFromInterval(0, 2));
-  let value2 = Number(randomIntFromInterval(3, 5));
-  let value3 = Number(randomIntFromInterval(6, 8));
-  let value4 = Number(randomIntFromInterval(9, 11));
-
-  let someTweet1 = tweetIds[value1];
-  let someTweet2 = tweetIds[value2];
-  let someTweet3 = tweetIds[value3];
-  let someTweet4 = tweetIds[value4];
-
-  function handleClick() {
-    console.log("The link was clicked");
-  }
-
-  return (
-    <div className="Twitter">
-      <div className="container">
-        <h1>Tweets</h1>
-
-        <p>
-          This component, randomly reloads selected tweets. For this you would
-          need to get the twitter IDs and push them to a random function.{" "}
-        </p>
-        <div className="twee">
-          <div className="tweets">
-            <Tweet tweetId={someTweet1} options={{ width: "200" }} />
+          <p>
+            This component, randomly reloads selected tweets. For this you would
+            need to get the twitter IDs and push them to a random function.{" "}
+          </p>
+          <div className="twee">
+            <div className="tweets">
+              <Tweet tweetId={someTweet5} options={{ width: "200" }} />
+            </div>
+            <div className="tweets">
+              <Tweet tweetId={someTweet6} options={{ width: "200" }} />
+            </div>
+            <div className="tweets">
+              <Tweet tweetId={someTweet7} options={{ width: "200" }} />
+            </div>
+            <div className="tweets">
+              <Tweet tweetId={someTweet8} options={{ width: "200" }} />
+            </div>
           </div>
-          <div className="tweets">
-            <Tweet tweetId={someTweet2} options={{ width: "200" }} />
-          </div>
-          <div className="tweets">
-            <Tweet tweetId={someTweet3} options={{ width: "200" }} />
-          </div>
-          <div className="tweets">
-            <Tweet tweetId={someTweet4} options={{ width: "200" }} />
-          </div>
+          {/* <button className="btn btn-large purple" onClick={this.refreshPage}>
+            Click here to randomly load some selected tweets
+          </button> */}
         </div>
-
-        <button className="btn btn-large purple" onClick={handleClick}>
-          Click here to randomly load some selected tweets
-        </button>
       </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
 export default Tweets;
