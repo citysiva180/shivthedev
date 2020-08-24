@@ -13,9 +13,9 @@ class Tweets extends Component {
     ],
   };
 
-  componentDidUpdate(previousProps, prevState, snapshot) {
-    console.log(this.componentDidUpdate);
-  }
+  // componentDidUpdate(previousProps, prevState, snapshot) {
+  //   console.log(this.componentDidUpdate);
+  // }
   reloadTweets = (e) => {
     e.preventDefault();
     let x = randomTweetGenerator();
