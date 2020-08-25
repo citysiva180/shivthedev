@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { css } from "@emotion/core";
 import BeatLoader from "react-spinners/BeatLoader";
-
+import "../stylesheets/loading.css";
 class Loading extends Component {
   state = { loading: true };
   render() {
@@ -12,22 +12,17 @@ class Loading extends Component {
       align-content: center;
     `;
     return (
-      <div className="container">
-        <span style={{ alignContent: "center", color: "purple" }}>
-          <h1>You're On the Way...</h1>
-        </span>
+      <div className="loader">
+        <div className="container">
+          <h1>Welcome to Shivthedev.tech</h1>
+          <h3>You're On the Way...</h3>
 
-        <p>{""}</p>
+          <p>{""}</p>
 
-        <div
-          className="SqaureLoader"
-          style={{ alignContent: "center", color: "purple" }}
-        >
           <BeatLoader
             css={override}
             size={"20px"}
             color={"purple"}
-            alignContent={"center"}
             loading={this.state.loading}
           />
         </div>

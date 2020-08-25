@@ -14,19 +14,19 @@ function App() {
   return (
     <React.Fragment>
       <BrowserRouter>
-        <Navbar></Navbar>
+        <Suspense fallback={<Loading></Loading>}>
+          <Navbar></Navbar>
 
-        <Switch>
-          <Suspense fallback={<Loading></Loading>}>
+          <Switch>
             <Route path="/" exact component={Home}></Route>
             <Redirect path="/home" exact to="/" component={Home}></Redirect>
             <Route path="/portfolio" component={portfolio}></Route>
             <Route path="/contact" component={contact}></Route>
             <Route path="/article" component={article}></Route>
             <Footer></Footer>
-          </Suspense>
-          <Redirect path="/" exact to="/"></Redirect>
-        </Switch>
+            <Redirect path="/" exact to="/"></Redirect>
+          </Switch>
+        </Suspense>
       </BrowserRouter>
     </React.Fragment>
   );
