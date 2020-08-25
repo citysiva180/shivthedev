@@ -23,16 +23,18 @@ class Contact extends Component {
                 aria-describedby="emailHelp"
               />
               <small id="emailHelp" className="form-text text-muted">
-                We'll never share your email with anyone else.
+                I'll never share your email with anyone else.
               </small>
             </div>
-            <div className="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input
-                type="password"
-                className="form-control"
-                id="exampleInputPassword1"
-              />
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">
+                Share something wise ...
+              </label>
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
             </div>
             <div className="form-group form-check">
               <input
@@ -41,11 +43,11 @@ class Contact extends Component {
                 id="exampleCheck1"
               />
               <label className="form-check-label" for="exampleCheck1">
-                Check me out
+                Would you like me to develop a website for you?
               </label>
             </div>
-            <button type="submit" className="btn btn-lg purple">
-              Submit
+            <button type="submit" className="btn btn-lg">
+              Letz Go..!
             </button>
           </form>
         </div>
