@@ -7,15 +7,19 @@ class Contact extends Component {
     return (
       <div className="formStyler">
         <div className="container">
-          <h1>It never hurts to talk!</h1>
+          <h1 style={{ color: "purple", fontFamily: "'Oswald', sans-serif" }}>
+            It never hurts to talk!
+          </h1>
           <p>
             Do you wish to connect with me for any queries? Please do drop in
-            your contact and note, will reply you through you email. Can't wait
-            to connect with you :-)
+            your contact and note, will reply you through email. Can't wait to
+            connect with you :-)
           </p>
           <form>
             <div className="form-group">
-              <label for="exampleInputEmail1">Email address</label>
+              <label for="exampleInputEmail1" style={{ color: "purple" }}>
+                Email address
+              </label>
               <input
                 type="email"
                 className="form-control"
@@ -27,7 +31,10 @@ class Contact extends Component {
               </small>
             </div>
             <div class="form-group">
-              <label for="exampleFormControlTextarea1">
+              <label
+                for="exampleFormControlTextarea1"
+                style={{ color: "purple" }}
+              >
                 Share something wise ...
               </label>
               <textarea
@@ -46,7 +53,11 @@ class Contact extends Component {
                 Would you like me to develop a website for you?
               </label>
             </div>
-            <button type="submit" className="btn btn-lg">
+            <button
+              type="submit"
+              className="btn btn-lg purple"
+              style={{ color: "white", backgroundColor: "purple" }}
+            >
               Letz Go..!
             </button>
           </form>
