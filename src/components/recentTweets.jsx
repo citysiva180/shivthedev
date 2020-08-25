@@ -11,6 +11,7 @@ class Tweets extends Component {
       { tweet: "1134044618541027329" },
       { tweet: "1140593481682833408" },
     ],
+    isLoading: false,
   };
 
   // componentDidUpdate(previousProps, prevState, snapshot) {
@@ -18,12 +19,17 @@ class Tweets extends Component {
   // }
   reloadTweets = (e) => {
     e.preventDefault();
+    this.setState({ isLoading: true });
+
     let x = randomTweetGenerator();
     let check = [...this.state.tweets];
     for (let i = 0; i < check.length; i++) {
       check[i].tweet = x[i];
     }
     this.setState({ check });
+    setTimeout(() => {
+      this.setState({ isLoading: false });
+    }, 5000);
   };
 
   render() {
