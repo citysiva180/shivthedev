@@ -2,7 +2,7 @@ import React, { Component, Suspense } from "react";
 import { Tweet } from "react-twitter-widgets";
 import "../stylesheets/recentTweets.css";
 import { randomTweetGenerator } from "../components/rough";
-import Loading from "../components/loading";
+import LoadingTweet from "../components/loadingCompoenent";
 
 class Tweets extends Component {
   state = {
@@ -36,14 +36,13 @@ class Tweets extends Component {
   render() {
     const renderTweet = (item, key) => {
       return (
-        <Suspense fallback={<Loading></Loading>}>
-          <div className="tweets" key={key}>
-            {<Tweet tweetId={item.tweet} options={{ width: 200 }} />}
-          </div>
-        </Suspense>
+        <div className="tweets" key={key}>
+          {<Tweet tweetId={item.tweet} />}
+        </div>
       );
     };
 
+    if (this.state.isLoading) return <LoadingTweet></LoadingTweet>;
     return (
       <div className="Twitter">
         <div className="container">
@@ -58,7 +57,9 @@ class Tweets extends Component {
             There is a lot of mechanism involved here. Preventing default load
             and finally changing the state from normalcy
           </p>
-          {this.state.tweets.map(renderTweet)}
+          <div className="loadingscreen">
+            {this.state.tweets.map(renderTweet)}
+          </div>
         </div>
       </div>
     );

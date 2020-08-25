@@ -1,4 +1,4 @@
-import React, { Component, Suspense } from "react";
+import React, { Component } from "react";
 import "../stylesheets/home.css";
 import Introduction from "../components/intro";
 import Programming from "../components/programming";
