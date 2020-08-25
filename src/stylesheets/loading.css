@@ -1,9 +1,5 @@
-.loader>.container {
+.loader {
     margin-left: 300px;
     align-content: center;
     position: fixed;
-}
-
-.loader>.container>h1 {
-    color: purple
 }

@@ -1,7 +1,8 @@
-import React, { Component } from "react";
+import React, { Component, Suspense } from "react";
 import { Tweet } from "react-twitter-widgets";
 import "../stylesheets/recentTweets.css";
 import { randomTweetGenerator } from "../components/rough";
+import Loading from "../components/loading";
 
 class Tweets extends Component {
   state = {
@@ -35,9 +36,11 @@ class Tweets extends Component {
   render() {
     const renderTweet = (item, key) => {
       return (
-        <div className="tweets" key={key}>
-          {<Tweet tweetId={item.tweet} options={{ width: 200 }} />}
-        </div>
+        <Suspense fallback={<Loading></Loading>}>
+          <div className="tweets" key={key}>
+            {<Tweet tweetId={item.tweet} options={{ width: 200 }} />}
+          </div>
+        </Suspense>
       );
     };
 

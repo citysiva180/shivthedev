@@ -1,0 +1,20 @@
+.formStyler>.container>.h1 {
+    color: purple;
+    border: 2px solid purple;
+    margin-bottom: 50px
+}
+
+.formStyler>.container {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh
+}
+
+/* .formStyler>.container>.form-group {
+    color: purple
+} */
+
+.formStyler>.container>.form-group>.btn {
+    color: purple
+}

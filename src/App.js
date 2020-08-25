@@ -23,9 +23,9 @@ function App() {
             <Route path="/portfolio" component={portfolio}></Route>
             <Route path="/contact" component={contact}></Route>
             <Route path="/article" component={article}></Route>
-            <Footer></Footer>
             <Redirect path="/" exact to="/"></Redirect>
           </Switch>
+          <Footer></Footer>
         </Suspense>
       </BrowserRouter>
     </React.Fragment>

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Suspense } from "react";
 import "../stylesheets/home.css";
 import Introduction from "../components/intro";
 import Programming from "../components/programming";
@@ -16,6 +16,7 @@ class Home extends Component {
     return (
       <div className="home">
         {/* Carousel */}
+
         <div
           id="carouselExampleFade"
           className="carousel slide carousel-fade"

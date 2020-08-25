@@ -13,19 +13,19 @@ class Loading extends Component {
     `;
     return (
       <div className="loader">
-        <div className="container">
-          <h1>Welcome to Shivthedev.tech</h1>
-          <h3>You're On the Way...</h3>
+        <h1 style={{ border: "none", color: "purple" }}>
+          Welcome to Shivthedev.tech
+        </h1>
+        <h3>You're On the Way...</h3>
 
-          <p>{""}</p>
+        <p>{""}</p>
 
-          <BeatLoader
-            css={override}
-            size={"20px"}
-            color={"purple"}
-            loading={this.state.loading}
-          />
-        </div>
+        <BeatLoader
+          css={override}
+          size={"20px"}
+          color={"purple"}
+          loading={this.state.loading}
+        />
       </div>
     );
   }
